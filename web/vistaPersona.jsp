@@ -70,12 +70,12 @@ if(ses.getAttribute("usuario")!=null && ses !=null && ses.getAttribute("nivel")!
             <input type="text" name="txtNombres" placeholder=" Nombres ..." size="30" class="form.control input-sm"><br>
             <input type="text" name="txtApellidos" placeholder="Apellidos..." size="30" class="form.control input-sm"><br>
             <input type="text" name="txtEdad" placeholder=" Edad ..." size="30" class="form.control input-sm"><br><br>
-            <input type="submit" name="btnInsertar" value="Insertar"class="btn btn-primary btn-sm">
+            <input type="submit" name="btnInsertar" value="Insertar"class="btn btn-primary btn-sm" >
             <input type="submit" name="btnModificar" value="Modificar" class="btn btn-success btn-sm">
             <input type="submit" name="btnEliminar" value="Eliminar" class="btn btn-danger btn-sm">   
             <hr>
             <hr>
-            <pre style="background-color: black " >Buscar: <input type="text" name="txtCriterio" class="form.control input-sm">Atributo:<input type="text" name="txtCampo" placeholder="nombre,cargo,etc.." class="form.control input-sm"> 
+            <pre style="background-color: black "><img src="iconos/buscar.png">Buscar: <input type="text" name="txtCriterio" class="form.control input-sm"><img src="iconos/atributo.png">Atributo:<input type="text" name="txtCampo" placeholder="nombre,cargo,etc.." class="form.control input-sm"> 
             <input type="submit" name="btnFiltrar" value="Filtrar" class="btn btn-danger btn-sm"><input type="submit" name="btnReiniciar" value="Reiniciar" class="btn btn-danger btn-sm"></pre>
         </form>
     <hr>  
