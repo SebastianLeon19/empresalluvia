@@ -57,28 +57,26 @@ if(ses.getAttribute("usuario")!=null && ses !=null && ses.getAttribute("nivel")!
      
     <body>
         
-        <pre>Bienvenido <%= usuario %> | nivel Administrador R.R.H.H | <img src="iconos/man.png"> <a href="login.jsp?cerrar=true">Cerrar Sesion</a></pre>
+        <pre style="color:rgb(255,0,0);">Bienvenido <%= usuario %> | nivel Administrador R.R.H.H | <img src="iconos/man.png"> <a href="login.jsp?cerrar=true">Cerrar Sesion</a></pre>
         <hr>
         
         
         
     <center>
         <!-- EL FORMULARIO PARA INGRESO DE DADTOS -->
-        <h1>Registro Empleados</h1>
+        <h1>Registro de Empleados</h1>
         <form  name="formPersona" method="POST" action="SERVPersona">
-            <input type="text" name="txtId" placeholder=" Id de persona" size="30" class="form.control input-sm"><br>
-            <input type="text" name="txtNombres" placeholder=" nombres ..." size="30" class="form.control input-sm"><br>
-            <input type="text" name="txtApellidos" placeholder="apellidos..." size="30" class="form.control input-sm"><br>
-            <input type="text" name="txtEdad" placeholder=" edad ..." size="30" class="form.control input-sm"><br><br>
+            <input type="text" name="txtId" placeholder=" Id Empleados" size="30" class="form.control input-sm"><br>
+            <input type="text" name="txtNombres" placeholder=" Nombres ..." size="30" class="form.control input-sm"><br>
+            <input type="text" name="txtApellidos" placeholder="Apellidos..." size="30" class="form.control input-sm"><br>
+            <input type="text" name="txtEdad" placeholder=" Edad ..." size="30" class="form.control input-sm"><br><br>
             <input type="submit" name="btnInsertar" value="Insertar"class="btn btn-primary btn-sm">
             <input type="submit" name="btnModificar" value="Modificar" class="btn btn-success btn-sm">
             <input type="submit" name="btnEliminar" value="Eliminar" class="btn btn-danger btn-sm">   
             <hr>
             <hr>
-            Buscar: <input type="text" name="txtCriterio">
-            En base a:<input type="text" name="txtCampo" placeholder="nombre,cargo,etc..">
-            <input type="submit" name="btnFiltrar" value="Filtrar"> 
-             <input type="submit" name="btnReiniciar" value="Reiniciar"> 
+            <pre style="background-color: black " >Buscar: <input type="text" name="txtCriterio" class="form.control input-sm">Atributo:<input type="text" name="txtCampo" placeholder="nombre,cargo,etc.." class="form.control input-sm"> 
+            <input type="submit" name="btnFiltrar" value="Filtrar" class="btn btn-danger btn-sm"><input type="submit" name="btnReiniciar" value="Reiniciar" class="btn btn-danger btn-sm"></pre>
         </form>
     <hr>  
         <!-- DISEÑAMOS LA TABLA EN HTML Y LE METEMOS CODIGO JSP -->
